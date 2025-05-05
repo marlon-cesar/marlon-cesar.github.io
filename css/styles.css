@@ -1,0 +1,18 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #111116;
+  }
+  
+  h1, h2, h3 {
+    letter-spacing: 1px;
+  }
+  
+  a {
+    transition: all 0.2s ease;
+  }
+  
+  a:hover {
+    color: #0f0 !important;
+    transform: scale(1.1);
+  }
+  
