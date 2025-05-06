@@ -1,18 +1,88 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #111116;
-  }
-  
-  h1, h2, h3 {
-    letter-spacing: 1px;
-  }
-  
-  a {
-    transition: all 0.2s ease;
-  }
-  
-  a:hover {
-    color: #0f0 !important;
-    transform: scale(1.1);
-  }
-  
+  font-family: 'Courier New', Courier, monospace !important;
+  background-color: #111116;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 1px;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #0f0 !important;
+  transform: scale(1.1);
+}
+
+.section-top{
+  padding: 3em 0;
+  background-image: url(../assets/img/background-top.svg); 
+  background-position: center;
+}
+
+.numbers-top h1 {
+  font-size: 3.75em;
+}
+
+.numbers-top p {
+  max-width: 150px;
+}
+
+
+
+
+
+
+.section-skill .card-skill {
+  background-color: #161b22;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  height: 100%;
+  transition: 0.3s;
+  border: 1px solid #198754 ;
+}
+
+.section-skill .card-skill:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.section-skill .icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.section-skill .bg-backend{
+  background-color: #512bd4;
+}
+
+.section-skill .tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.section-skill .tech-icons span {
+  background-color: #21262d;
+  padding: 0.4rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+}
+
+.section-skill hr {
+  border-top: 1px solid #30363d;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
