@@ -7,8 +7,19 @@ window.addEventListener('DOMContentLoaded', event => {
   document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_vo7v1vm', 'template_0jmhvux', this)
-      .then(() => {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    var parms = {
+        name,
+        message,
+        email
+    };
+
+    emailjs.send('service_vo7v1vm', 'template_0jmhvux', parms)
+      .then((response) => {
+        console.log(response)
         alert('Your message has been sent!');
         this.reset();
       }, (error) => {
