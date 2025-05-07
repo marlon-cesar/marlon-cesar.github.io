@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', event => {
     setExperience();
     
     animatedNumberInterval('projects-count', 15); 
-    animatedNumberInterval('certification-count', 1,200); 
+    animatedNumberInterval('certification-count', 3, 200); 
 })
 
 

@@ -13,14 +13,20 @@ a {
   transition: all 0.2s ease;
 }
 
-a:hover {
+nav a:hover,
+footer a:hover {
   color: #0f0 !important;
   transform: scale(1.1);
 }
 
-.section-top{
+i:hover {
+  transform: scale(1.1);
+}
+
+.section-top,
+.section-contact {
   padding: 3em 0;
-  background-image: url(../assets/img/background-top.svg); 
+  background-image: url(../assets/img/background-top.svg);
   background-position: center;
 }
 
@@ -35,20 +41,22 @@ a:hover {
 
 
 
-.section-skill{
-  background-color:  #0d1117;
+.section-skills,
+.section-certifications {
+  background-color: #0d1117;
 }
 
-.section-skill h5{
+.section-skills h5 {
   color: #ffffff;
 }
 
-.section-skill p{
+.section-skills p {
   color: #8b949e;
 }
 
-.section-skill .card-skill {
-  font-family: 'Inter', sans-serif !important; 
+.section-skills .card-skill,
+.section-certifications .card {
+  font-family: 'Inter', sans-serif !important;
   border-radius: 1rem;
   padding: 2rem;
   height: 100%;
@@ -58,13 +66,14 @@ a:hover {
   transition: 0.3s;
 }
 
-.section-skill .card-skill:hover {
+.section-skills .card-skill:hover,
+.section-certifications .card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   border-color: #3b82f6;
 }
 
-.section-skill .icon-box {
+.section-skills .icon-box {
   width: 40px;
   height: 40px;
   border-radius: 10px;
@@ -75,21 +84,34 @@ a:hover {
   font-size: 20px;
 }
 
-.section-skill .bg-backend{
+.section-skills .bg-backend {
   background-color: #512bd4;
 }
-.section-skill .bg-frontend{
+
+.section-skills .bg-frontend {
   background-color: #ec4899;
 }
 
-.section-skill .tech-icons {
+.section-skills .bg-mobile {
+  background-color: #00C2FF;
+}
+
+.section-skills .bg-testing {
+  background-color: #895900;
+}
+
+.section-skills .bg-tools {
+  background-color: #042d57;
+}
+
+.section-skills .tech-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 1rem;
 }
 
-.section-skill .tech-icons span {
+.section-skills .tech-icons span {
   padding: 0.4rem 0.75rem;
   border-radius: 1rem;
   font-size: 0.85rem;
@@ -97,8 +119,23 @@ a:hover {
   color: #e5e7eb;
 }
 
-.section-skill hr {
+.section-skills hr {
   border-top: 1px solid #30363d;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+
+
+
+.section-certifications .btn-outline-light,
+.section-contact .btn-outline-light {
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.section-certifications .btn-outline-light:hover,
+.section-contact .btn-outline-light:hover {
+  background-color: #00ffaa;
+  color: #000;
+  border-color: #00ffaa;
 }
