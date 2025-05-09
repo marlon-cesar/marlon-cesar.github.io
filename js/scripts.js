@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', event => {
     setAge();
     setExperience();
 
-    animatedNumberInterval('projects-count', 15);
+    animatedNumberInterval('projects-count', 5);
     animatedNumberInterval('certification-count', 3, 200);
 
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

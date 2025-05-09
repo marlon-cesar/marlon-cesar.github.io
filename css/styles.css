@@ -183,3 +183,27 @@ i:hover {
   font-family: 'Courier New', monospace;
   letter-spacing: 1px;
 }
+
+/* @keyframes hoverFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0px); }
+}
+
+.project-card {
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  animation: hoverFloat 1.2s ease-in-out infinite;
+  box-shadow: 0 8px 25px rgba(0, 255, 128, 0.2);
+} */
+
+.project-card img {
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.project-card img:hover {
+  transform: scale(1.08);
+}
