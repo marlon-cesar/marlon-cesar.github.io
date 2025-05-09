@@ -18,13 +18,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
-
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/email.js"></script>
 </head>
@@ -43,14 +44,12 @@
 
   <section class="section-top mt-md-5 mt-0">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center flex-md-row-reverse">
 
-        <div class="col-md-6 text-center d-md-none d-block mb-5">
+        <div class="col-md-6 text-center mb-5">
           <img src="assets/img/me.jpeg" alt="Profile" class="img-fluid rounded-circle border border-success"
             style="max-width: 300px;">
         </div>
-
-
 
         <div class="col-md-6 text-center text-md-start">
           <h1 class="display-4 fw-bold mb-0" data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -84,10 +83,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 text-center d-none d-md-block">
-          <img src="assets/img/me.jpeg" alt="Profile" class="img-fluid rounded-circle border border-success"
-            style="max-width: 300px;">
-        </div>
+
       </div>
 
       <div class="row mt-5 numbers-top mx-md-0 mx-5">
@@ -118,7 +114,7 @@
       <div class="row g-4 mt-4">
 
         <!-- Backend -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
           <div class="card-skill">
             <div class="icon-box bg-backend"><i class="fa-solid fa-code"></i></div>
             <h5>Backend Development</h5>
@@ -132,12 +128,13 @@
               <span>Dapper</span>
               <span>RabbitMQ</span>
               <span>Hangfire</span>
+              <span>SignalR</span>
             </div>
           </div>
         </div>
 
         <!-- Frontend -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
           <div class="card-skill">
             <div class="icon-box bg-frontend"><i class="fa-solid fa-palette"></i></div>
             <h5>Frontend Development</h5>
@@ -151,13 +148,14 @@
               <span>Tailwind</span>
               <span>HTML</span>
               <span>CSS</span>
+              <span>Webpack</span>
             </div>
           </div>
         </div>
 
 
         <!-- Mobile Development -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
           <div class="card-skill">
             <div class="icon-box bg-mobile"><i class="fa-solid fa-mobile-screen"></i></div>
             <h5>Mobile Development</h5>
@@ -173,7 +171,7 @@
         </div>
 
         <!-- Databases -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
           <div class="card-skill">
             <div class="icon-box bg-success"><i class="fa-solid fa-database"></i></div>
             <h5>Databases</h5>
@@ -190,7 +188,7 @@
 
 
         <!-- Architecture & Testing -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
           <div class="card-skill">
             <div class="icon-box bg-testing"><i class="fa-solid fa-gears"></i></div>
             <h5>Architecture & Testing</h5>
@@ -209,7 +207,7 @@
         </div>
 
         <!-- DevOps & Tools -->
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
           <div class="card-skill">
             <div class="icon-box bg-tools"><i class="fa-solid fa-screwdriver-wrench"></i></div>
             <h5>DevOps & Tools</h5>
@@ -236,39 +234,49 @@
       <h1 class="section-title text-center text-white">Projects</h1>
 
 
-      <!-- Meal Managament System -->
-      <div class="row align-items-center my-5">
+      <!-- Meal Management -->
+      <div class="row align-items-center my-5" data-aos="fade-right">
         <div class="col-md-6">
           <img src="assets/projects/meal-management-ici/meal-management-menu.png" class="img-fluid rounded shadow"
-            alt="BlastoiseApp">
+            alt="Meal Management System">
         </div>
         <div class="col-md-6 text-white">
-          <h3 class="fw-bold text-success">Meal Managament System</h3>
-          <p class="mb-3">The Meal Management System provides management functions that the Department of Education of Curitiba needs to control food distribution across hundreds of public schools in Curitiba.</p>
+          <h3 class="fw-bold text-success mt-3 mt-md-0">Meal Management System</h3>
+          <p class="mb-3">The Meal Management System provides management functions that the Department of Education of
+            Curitiba needs to control food distribution across hundreds of public schools in Curitiba.</p>
           <div class="tech-icons">
+            <span>.NET</span>
+            <span>Angular</span>
+            <span>PostgreSQL</span>
             <span>DDD</span>
-            <span>Clean Architecture</span>
-            <span>xUnit</span>
-            <span>Moq</span>
-            <span>NSubstitute</span>
-            <span>MVC</span>
-            <span>MVVM</span>
+            <span>RabbitMQ</span>
+            <span>Hangfire</span>
+            <span>SignalR</span>
+            <span>Tailwind</span>
           </div>
           <button type="button" class="btn btn-outline-light btn-sm mt-4" data-bs-toggle="modal"
             data-bs-target="#modalMealManagement">More Details</button>
         </div>
       </div>
 
-      <!-- Meal Managament Modal -->
+      <!-- Meal Management Modal -->
       <div class="modal fade" id="modalMealManagement" tabindex="-1" aria-labelledby="modalMealManagementLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content bg-dark text-white">
+          <div class="modal-content text-white">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalMealManagementLabel">BlastoiseApp</h5>
+              <h5 class="modal-title" id="modalMealManagementLabel">Meal Management System</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                 aria-label="Close"></button>
             </div>
+            <div class="p-3 pb-0">
+              <p class="mb-0" style="font-family: 'Courier New', monospace; color: #ccc;">
+                <strong>Developed at:</strong>
+                <a href="https://ici.tec.br" class="btn btn-outline-light btn-sm" target="_blank"> Instituto das Cidades
+                  Inteligentes (ICI)</a>
+              </p>
+            </div>
+
             <div class="modal-body">
 
               <!-- Carousel -->
@@ -276,15 +284,19 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="assets/projects/meal-management-ici/meal-management-login.png"
-                      class="d-block w-100 rounded" alt="Screenshot 1">
+                      class="d-block w-100 rounded" alt="Meal Management System Login Page">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
-                      class="d-block w-100 rounded" alt="Screenshot 2">
+                    <img src="assets/projects/meal-management-ici/meal-management-home.png"
+                      class="d-block w-100 rounded" alt="Meal Management System Home Page">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
-                      class="d-block w-100 rounded" alt="Screenshot 3">
+                    <img src="assets/projects/meal-management-ici/meal-management-crud.png"
+                      class="d-block w-100 rounded" alt="Meal Management System Crud Example">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/meal-management-ici/meal-management-menu.png"
+                      class="d-block w-100 rounded" alt="Meal Management System Menu">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselMealManagement"
@@ -298,16 +310,33 @@
               </div>
 
               <!-- Description -->
-              <p><strong>Description:</strong> A full-featured Pokémon CRUD app using .NET MVC and Clean Architecture,
-                including background job processing with Hangfire and messaging with RabbitMQ.</p>
-              <p><strong>Main Features:</strong></p>
-              <ul>
-                <li>Pokémon registration, editing, and deletion</li>
-                <li>Layered architecture: Application, Domain, Infrastructure</li>
-                <li>PostgreSQL as the main database</li>
-                <li>Asynchronous message queue with RabbitMQ</li>
-                <li>Scheduled and recurring tasks with Hangfire</li>
-              </ul>
+              <p>The Meal Management System provides the management functionalities required by the Department of
+                Education of Curitiba to control food distribution across hundreds of public schools in the city.</p>
+
+              <p>The project aims to support the Municipal Department of Education of Curitiba in managing and
+                overseeing school meals for more than 450 educational units. The system provides features for educators,
+                nutritionists, and other school staff to request and manage meals, including special diets for students
+                with specific needs, such as food intolerances or allergies. It also enables the creation of monthly
+                menus for each school, offering nutritional information and intelligent mechanisms that automatically
+                substitute meals for students with dietary restrictions. Additionally, the Meal Management System
+                supports the evaluation of meal quality, service performance, and includes financial tools to calculate
+                payments to suppliers and generate detailed reports.</p>
+
+              <p>The application is built on distributed architecture principles.
+                <span class="tech-skill-span">ASP.NET Core</span> and
+                <span class="tech-skill-span">Angular</span> are the core technologies for the back-end and
+                front-end, respectively.
+                A background service, powered by <span class="tech-skill-span">Hangfire</span>, is responsible for
+                handling calculations and executing heavy processing tasks.
+                The system uses <span class="tech-skill-span">PostgreSQL</span> as its main relational database.
+                This service communicates with the APIs and front-end applications through a
+                <span class="tech-skill-span">RabbitMQ</span> event bus and
+                <span class="tech-skill-span">SignalR</span>.
+              </p>
+
+              <p>Throughout the development of this system, I worked on both the back-end and front-end. I contributed
+                to building APIs, background processing, and database integration with PostgreSQL, as well as
+                implementing the user interface and core features using Angular and Tailwind.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
@@ -316,79 +345,103 @@
         </div>
       </div>
 
-      <!-- Meal Managament -->
-      <div class="row align-items-center my-5">
+      <!-- SITES -->
+      <div class="row align-items-center my-5 flex-md-row-reverse" data-aos="fade-left">
+        <div class="col-md-6">
+          <img src="assets/projects/sites/sites-home.png" class="img-fluid rounded shadow" alt="SITES">
+        </div>
         <div class="col-md-6 text-white">
-          <h3 class="fw-bold text-success">BlastoiseApp</h3>
-          <p class="mb-3">Sistema de gerenciamento de Pokémons com arquitetura em camadas, mensageria e execução de
-            tarefas em background.</p>
+          <h3 class="fw-bold text-success mt-3 mt-md-0">SITES - Transportation for Special Education</h3>
+          <p class="mb-3">A portal that allows citizens of Curitiba to request transportation for students with special
+            needs.</p>
           <div class="tech-icons">
-            <span>DDD</span>
-            <span>Clean Architecture</span>
-            <span>xUnit</span>
-            <span>Moq</span>
-            <span>NSubstitute</span>
+            <span>.NET</span>
             <span>MVC</span>
-            <span>MVVM</span>
+            <span>PostgreSQL</span>
+            <span>DDD</span>
+            <span>Hangfire</span>
+            <span>Webpack</span>
+            <span>xUnit</span>
+            <span>NSubstitute</span>
           </div>
           <button type="button" class="btn btn-outline-light btn-sm mt-4" data-bs-toggle="modal"
-            data-bs-target="#modalMealManagement"> More Details</button>
-        </div>
-        <div class="col-md-6">
-          <img src="assets/projects/meal-management-ici/meal-management-login.png" class="img-fluid rounded shadow"
-            alt="BlastoiseApp">
+            data-bs-target="#modalSites">More Details</button>
         </div>
       </div>
 
-      <!-- Meal Managament Modal -->
-      <div class="modal fade" id="modalMealManagement" tabindex="-1" aria-labelledby="modalMealManagementLabel"
-        aria-hidden="true">
+      <!-- SITES Modal -->
+      <div class="modal fade" id="modalSites" tabindex="-1" aria-labelledby="modalSitesLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content bg-dark text-white">
+          <div class="modal-content text-white">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalMealManagementLabel">BlastoiseApp</h5>
+              <h5 class="modal-title" id="modalSitesLabel">SITES - Transportation for Special Education</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                 aria-label="Close"></button>
             </div>
+            <div class="p-3 pb-0">
+              <p class="mb-0" style="font-family: 'Courier New', monospace; color: #ccc;">
+                <strong>Developed at:</strong>
+                <a href="https://ici.tec.br" class="btn btn-outline-light btn-sm" target="_blank"> Instituto das Cidades
+                  Inteligentes (ICI)</a>
+              </p>
+            </div>
+
             <div class="modal-body">
 
               <!-- Carousel -->
-              <div id="carouselMealManagement" class="carousel slide mb-4" data-bs-ride="carousel">
+              <div id="carouselSites" class="carousel slide mb-4" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
-                      class="d-block w-100 rounded" alt="Screenshot 1">
+                    <img src="assets/projects/sites/sites-login.png" class="d-block w-100 rounded"
+                      alt="SITES Login Page">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
-                      class="d-block w-100 rounded" alt="Screenshot 2">
+                    <img src="assets/projects/sites/sites-home.png" class="d-block w-100 rounded" alt="SITES Home Page">
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
-                      class="d-block w-100 rounded" alt="Screenshot 3">
+                    <img src="assets/projects/sites/sites-form.png" class="d-block w-100 rounded"
+                      alt="SITES Crud Example">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMealManagement"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSites"
                   data-bs-slide="prev">
                   <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMealManagement"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSites"
                   data-bs-slide="next">
                   <span class="carousel-control-next-icon"></span>
                 </button>
               </div>
 
               <!-- Description -->
-              <p><strong>Description:</strong> A full-featured Pokémon CRUD app using .NET MVC and Clean Architecture,
-                including background job processing with Hangfire and messaging with RabbitMQ.</p>
-              <p><strong>Main Features:</strong></p>
-              <ul>
-                <li>Pokémon registration, editing, and deletion</li>
-                <li>Layered architecture: Application, Domain, Infrastructure</li>
-                <li>PostgreSQL as the main database</li>
-                <li>Asynchronous message queue with RabbitMQ</li>
-                <li>Scheduled and recurring tasks with Hangfire</li>
-              </ul>
+              <p>A portal that allows citizens of Curitiba to request transportation for students with special needs.
+              </p>
+
+              <p>The solution includes features that provide education professionals with an overview of transportation
+                requests through dashboards, ID card issuance, reporting tools, route visualization, and real-time
+                vehicle tracking. Citizens can access the public portal to submit and monitor requests, while service
+                providers can generate attendance lists, register attendance via QR Code, and manage staff and bus
+                routes directly through the Company Portal.</p>
+
+              <p>The system was developed using <span class="tech-skill-span">.NET</span> following the <span
+                  class="tech-skill-span">MVC</span> pattern. It includes two portals: an administrative portal for
+                managing transportation requests and generating reports, and a public-facing portal where citizens can
+                request a vehicle.</p>
+
+              <p>The application uses <span class="tech-skill-span">PostgreSQL</span> as its main database engine, and
+                background services are handled through <span class="tech-skill-span">Hangfire</span> for scheduled and
+                asynchronous processing. The user interface is styled with <span
+                  class="tech-skill-span">Bootstrap</span> and the front-end assets are bundled using <span
+                  class="tech-skill-span">Webpack</span>.</p>
+
+              <p>To ensure quality and reliability, the system is covered with unit tests implemented using <span
+                  class="tech-skill-span">xUnit</span> and <span class="tech-skill-span">NSubstitute</span>.</p>
+
+              <p>Although my involvement in the project was brief, I was responsible for developing a significant
+                portion of the portal, contributing directly to the implementation of its main features and overall
+                structure.</p>
+
+
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
@@ -396,7 +449,6 @@
           </div>
         </div>
       </div>
-
 
 
     </div>
@@ -409,7 +461,7 @@
       <div class="row justify-content-center g-4 mt-4">
 
         <!-- Certificação Azure -->
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4" data-aos="fade-up">
           <div class="card  h-100 text-center shadow-lg ">
             <a href="https://www.credly.com/badges/ef90b489-eb67-40a8-9530-6d4e00e1fe60" target="_blank"
               class="text-decoration-none text-white">
@@ -422,7 +474,7 @@
             </a>
           </div>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4" data-aos="fade-down">
           <div class="card h-100 text-center shadow-lg ">
             <a href="https://cursos.becompliance.com/badges/badge.php?hash=08089d400387b8242c95303207615994ce7cc741"
               target="_blank" class="text-decoration-none text-white">
@@ -436,7 +488,7 @@
             </a>
           </div>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4" data-aos="fade-up">
           <div class="card  h-100 text-center shadow-lg ">
             <a href="https://cursos.becompliance.com/badges/badge.php?hash=479b123a59a4fd1eba2b383c8966b0b6e6b864d9"
               target="_blank" class="text-decoration-none text-white">
@@ -473,7 +525,7 @@
           <textarea class="form-control bg-secondary text-white border-0" id="message" rows="5" required></textarea>
         </div>
 
-        <div class="text-center">
+        <div class="text-center" data-aos="zoom-out-up">
           <button type="submit" class="btn btn-outline-light px-4 py-2">Send Message</button>
         </div>
       </form>

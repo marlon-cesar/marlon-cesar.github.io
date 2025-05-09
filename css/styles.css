@@ -115,7 +115,7 @@ i:hover {
   margin-top: 1rem;
 }
 
-.tech-icons span {
+.tech-icons span, .tech-skill-span {
   padding: 0.4rem 0.75rem;
   border-radius: 1rem;
   font-size: 0.85rem;
@@ -168,4 +168,18 @@ i:hover {
 
 .section-title {
   font-family: 'Courier New', monospace !important;
+}
+
+.modal-content {
+  background-color: rgba(18, 18, 20, 0.95);
+}
+
+.modal-body p {
+  color: #cccccc;
+}
+
+.modal-title {
+  color: #00ffae;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
 }
