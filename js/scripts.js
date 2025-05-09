@@ -5,6 +5,12 @@ window.addEventListener('DOMContentLoaded', event => {
     
     animatedNumberInterval('projects-count', 15); 
     animatedNumberInterval('certification-count', 3, 200); 
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    const now = Date.now();    
+    document.getElementById('current-year').innerHTML = now.getFullYear();
 })
 
 

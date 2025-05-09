@@ -38,6 +38,10 @@ i:hover {
   max-width: 150px;
 }
 
+.custom-tooltip {
+  --bs-tooltip-bg:  #5896c7;
+  --bs-tooltip-color: white;
+}
 
 
 
@@ -104,14 +108,14 @@ i:hover {
   background-color: #042d57;
 }
 
-.section-skills .tech-icons {
+.tech-icons{
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 1rem;
 }
 
-.section-skills .tech-icons span {
+.tech-icons span {
   padding: 0.4rem 0.75rem;
   border-radius: 1rem;
   font-size: 0.85rem;
@@ -127,15 +131,41 @@ i:hover {
 
 
 
+.section-projects {
+  background-color: black;
+  font-family: 'Inter', sans-serif ;
+}
+.section-projects .badge.bg-secondary {
+  background-color: #2c2f38;
+  border-radius: 0;
+  padding: 0.4rem 0.7rem;
+}
+.section-projects .btn-outline-light {
+  border-radius: 0;
+}
+.section-projects .modal-content {
+  border-radius: 0;
+}
+
+
+
+
 .section-certifications .btn-outline-light,
-.section-contact .btn-outline-light {
+.section-contact .btn-outline-light,
+.section-projects .btn-outline-light {
   border-radius: 50px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .section-certifications .btn-outline-light:hover,
-.section-contact .btn-outline-light:hover {
+.section-contact .btn-outline-light:hover,
+.section-projects .btn-outline-light:hover {
   background-color: #00ffaa;
   color: #000;
   border-color: #00ffaa;
+}
+
+
+.section-title {
+  font-family: 'Courier New', monospace !important;
 }

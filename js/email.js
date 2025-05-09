@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
         alert('Your message has been sent!');
         this.reset();
       }, (error) => {
-        console.log('Erro ao enviar: ' + error.text);
+        console.log('Error while sending the message:' + error.text);
       });
   });
 

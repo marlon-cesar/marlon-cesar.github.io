@@ -24,15 +24,14 @@
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/email.js"></script>
 </head>
 
 <body class="bg-dark text-light">
 
-  <nav class="container d-md-flex d-none justify-content-between align-items-center p-3 px-5 mt-4">
+  <nav class="container d-md-flex d-none justify-content-between align-items-center py-3 mt-4">
     <h3 class="fs-1 fw-bold text-white">Marlon <span class="fs-1 fw-bold text-success">.</span></h3>
     <div>
       <a href="#section-skills" class="text-white text-decoration-none mx-3">Skills</a>
@@ -54,8 +53,12 @@
 
 
         <div class="col-md-6 text-center text-md-start">
+          <h1 class="display-4 fw-bold mb-0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="General Kenobi.">
+            Hello There!
+          </h1>
           <h1 class="display-4 fw-bold mb-0">
-            Hello I'm
+            I'm
           </h1>
           <div style="height: 140px;">
             <img class="img-fluid"
@@ -122,12 +125,13 @@
             <p>Developing robust APIs and server-side systems.</p>
             <hr>
             <div class="tech-icons">
-              <span class="skill-icon">C#</span>
-              <span class="skill-icon">.NET</span>
-              <span class="skill-icon">ASP.NET</span>
-              <span class="skill-icon">Entity Framwework</span>
-              <span class="skill-icon">RabbitMQ</span>
-              <span class="skill-icon">Hangfire</span>
+              <span>C#</span>
+              <span>.NET</span>
+              <span>ASP.NET</span>
+              <span>Entity Framework</span>
+              <span>Dapper</span>
+              <span>RabbitMQ</span>
+              <span>Hangfire</span>
             </div>
           </div>
         </div>
@@ -140,11 +144,13 @@
             <p>Building interactive UIs with modern frameworks and languages.</p>
             <hr>
             <div class="tech-icons">
-              <span class="skill-icon">Angular</span>
-              <span class="skill-icon">TypeScript</span>
-              <span class="skill-icon">JavaScript</span>
-              <span class="skill-icon">Bootstrap</span>
-              <span class="skill-icon">Tailwind</span>
+              <span>Angular</span>
+              <span>TypeScript</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+              <span>Tailwind</span>
+              <span>HTML</span>
+              <span>CSS</span>
             </div>
           </div>
         </div>
@@ -158,10 +164,10 @@
             <p>Creating performant and user-friendly mobile applications for multiple platforms.</p>
             <hr>
             <div class="tech-icons">
-              <span class="skill-icon">Xamarin</span>
-              <span class="skill-icon">MAUI</span>
-              <span class="skill-icon">Android</span>
-              <span class="skill-icon">iOS</span>
+              <span>Xamarin</span>
+              <span>MAUI</span>
+              <span>Android</span>
+              <span>iOS</span>
             </div>
           </div>
         </div>
@@ -174,10 +180,10 @@
             <p>Designing and managing relational databases.</p>
             <hr>
             <div class="tech-icons">
-              <span class="skill-icon">SQL Server</span>
-              <span class="skill-icon">PostgreSQL</span>
-              <span class="skill-icon">SQLite</span>
-              <span class="skill-icon">MongoDB</span>
+              <span>SQL Server</span>
+              <span>PostgreSQL</span>
+              <span>SQLite</span>
+              <span>MongoDB</span>
             </div>
           </div>
         </div>
@@ -191,13 +197,13 @@
             <p>Designing scalable systems and ensuring quality.</p>
             <hr>
             <div class="tech-icons">
-              <span class="skill-icon">DDD</span>
-              <span class="skill-icon">Clean Architecture</span>
-              <span class="skill-icon">xUnit</span>
-              <span class="skill-icon">Moq</span>
-              <span class="skill-icon">NSubstitute</span>
-              <span class="skill-icon">MVC</span>
-              <span class="skill-icon">MVVM</span>
+              <span>DDD</span>
+              <span>Clean Architecture</span>
+              <span>xUnit</span>
+              <span>Moq</span>
+              <span>NSubstitute</span>
+              <span>MVC</span>
+              <span>MVVM</span>
             </div>
           </div>
         </div>
@@ -210,10 +216,12 @@
             <p>Version control, cloud, and development tools.</p>
             <hr>
             <div class="tech-icons">
-              <span class="skill-icon">Git</span>
-              <span class="skill-icon">Azure</span>
-              <span class="skill-icon">Visual Studio</span>
-              <span class="skill-icon">Visual Studio Code</span>
+              <span>Git</span>
+              <span>Azure</span>
+              <span>Visual Studio</span>
+              <span>Visual Studio Code</span>
+              <span>GitLab</span>
+              <span>Azure DevOps</span>
             </div>
           </div>
         </div>
@@ -226,6 +234,171 @@
   <section class="section-projects" id="section-projects">
     <div class="container py-5">
       <h1 class="section-title text-center text-white">Projects</h1>
+
+
+      <!-- Meal Managament System -->
+      <div class="row align-items-center my-5">
+        <div class="col-md-6">
+          <img src="assets/projects/meal-management-ici/meal-management-menu.png" class="img-fluid rounded shadow"
+            alt="BlastoiseApp">
+        </div>
+        <div class="col-md-6 text-white">
+          <h3 class="fw-bold text-success">Meal Managament System</h3>
+          <p class="mb-3">The Meal Management System provides management functions that the Department of Education of Curitiba needs to control food distribution across hundreds of public schools in Curitiba.</p>
+          <div class="tech-icons">
+            <span>DDD</span>
+            <span>Clean Architecture</span>
+            <span>xUnit</span>
+            <span>Moq</span>
+            <span>NSubstitute</span>
+            <span>MVC</span>
+            <span>MVVM</span>
+          </div>
+          <button type="button" class="btn btn-outline-light btn-sm mt-4" data-bs-toggle="modal"
+            data-bs-target="#modalMealManagement">More Details</button>
+        </div>
+      </div>
+
+      <!-- Meal Managament Modal -->
+      <div class="modal fade" id="modalMealManagement" tabindex="-1" aria-labelledby="modalMealManagementLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalMealManagementLabel">BlastoiseApp</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <!-- Carousel -->
+              <div id="carouselMealManagement" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
+                      class="d-block w-100 rounded" alt="Screenshot 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
+                      class="d-block w-100 rounded" alt="Screenshot 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
+                      class="d-block w-100 rounded" alt="Screenshot 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMealManagement"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMealManagement"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+
+              <!-- Description -->
+              <p><strong>Description:</strong> A full-featured Pokémon CRUD app using .NET MVC and Clean Architecture,
+                including background job processing with Hangfire and messaging with RabbitMQ.</p>
+              <p><strong>Main Features:</strong></p>
+              <ul>
+                <li>Pokémon registration, editing, and deletion</li>
+                <li>Layered architecture: Application, Domain, Infrastructure</li>
+                <li>PostgreSQL as the main database</li>
+                <li>Asynchronous message queue with RabbitMQ</li>
+                <li>Scheduled and recurring tasks with Hangfire</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meal Managament -->
+      <div class="row align-items-center my-5">
+        <div class="col-md-6 text-white">
+          <h3 class="fw-bold text-success">BlastoiseApp</h3>
+          <p class="mb-3">Sistema de gerenciamento de Pokémons com arquitetura em camadas, mensageria e execução de
+            tarefas em background.</p>
+          <div class="tech-icons">
+            <span>DDD</span>
+            <span>Clean Architecture</span>
+            <span>xUnit</span>
+            <span>Moq</span>
+            <span>NSubstitute</span>
+            <span>MVC</span>
+            <span>MVVM</span>
+          </div>
+          <button type="button" class="btn btn-outline-light btn-sm mt-4" data-bs-toggle="modal"
+            data-bs-target="#modalMealManagement"> More Details</button>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/projects/meal-management-ici/meal-management-login.png" class="img-fluid rounded shadow"
+            alt="BlastoiseApp">
+        </div>
+      </div>
+
+      <!-- Meal Managament Modal -->
+      <div class="modal fade" id="modalMealManagement" tabindex="-1" aria-labelledby="modalMealManagementLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalMealManagementLabel">BlastoiseApp</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <!-- Carousel -->
+              <div id="carouselMealManagement" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
+                      class="d-block w-100 rounded" alt="Screenshot 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
+                      class="d-block w-100 rounded" alt="Screenshot 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
+                      class="d-block w-100 rounded" alt="Screenshot 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMealManagement"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMealManagement"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+
+              <!-- Description -->
+              <p><strong>Description:</strong> A full-featured Pokémon CRUD app using .NET MVC and Clean Architecture,
+                including background job processing with Hangfire and messaging with RabbitMQ.</p>
+              <p><strong>Main Features:</strong></p>
+              <ul>
+                <li>Pokémon registration, editing, and deletion</li>
+                <li>Layered architecture: Application, Domain, Infrastructure</li>
+                <li>PostgreSQL as the main database</li>
+                <li>Asynchronous message queue with RabbitMQ</li>
+                <li>Scheduled and recurring tasks with Hangfire</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
   </section>
 
@@ -236,43 +409,47 @@
       <div class="row justify-content-center g-4 mt-4">
 
         <!-- Certificação Azure -->
-      <div class="col-12 col-lg-4">
-        <div class="card  h-100 text-center shadow-lg ">
-          <a href="https://www.credly.com/badges/ef90b489-eb67-40a8-9530-6d4e00e1fe60" target="_blank" class="text-decoration-none text-white">
-            <img src="assets/img/badge_AZ-900.png" class="card-img-top p-4" alt="Azure Fundamentals Badge">
-            <div class="card-body">
-              <h5 class="card-title">Microsoft Certified: Azure Fundamentals</h5>
-              <p class="card-text small">Issued by Microsoft</p>
-              <span class="btn btn-outline-light btn-sm mt-2">View Credential</span>
-            </div>
-          </a>
+        <div class="col-12 col-lg-4">
+          <div class="card  h-100 text-center shadow-lg ">
+            <a href="https://www.credly.com/badges/ef90b489-eb67-40a8-9530-6d4e00e1fe60" target="_blank"
+              class="text-decoration-none text-white">
+              <img src="assets/img/badge_AZ-900.png" class="card-img-top p-4" alt="Azure Fundamentals Badge">
+              <div class="card-body">
+                <h5 class="card-title">Microsoft Certified: Azure Fundamentals</h5>
+                <p class="card-text small">Issued by Microsoft</p>
+                <button class="btn btn-outline-light btn-sm mt-2">View Credential</button>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="card h-100 text-center shadow-lg ">
-          <a href="https://cursos.becompliance.com/badges/badge.php?hash=08089d400387b8242c95303207615994ce7cc741" target="_blank" class="text-decoration-none text-white">
-            <img src="assets/img/badge_Compartilhamento_de_Dados.png" class="card-img-top p-4" alt="Mestre do Compartilhamento de Dados Badge">
-            <div class="card-body">
-              <h5 class="card-title">Master of Data Sharing (LGPD)</h5>
-              <p class="card-text small">Issued by Be Compliance</p>
-              <span class="btn btn-outline-light btn-sm mt-2">View Credential</span>
-            </div>
-          </a>
+        <div class="col-12 col-lg-4">
+          <div class="card h-100 text-center shadow-lg ">
+            <a href="https://cursos.becompliance.com/badges/badge.php?hash=08089d400387b8242c95303207615994ce7cc741"
+              target="_blank" class="text-decoration-none text-white">
+              <img src="assets/img/badge_Compartilhamento_de_Dados.png" class="card-img-top p-4"
+                alt="Mestre do Compartilhamento de Dados Badge">
+              <div class="card-body">
+                <h5 class="card-title">Master of Data Sharing (LGPD)</h5>
+                <p class="card-text small">Issued by Be Compliance</p>
+                <button class="btn btn-outline-light btn-sm mt-2">View Credential</button>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="card  h-100 text-center shadow-lg ">
-          <a href="https://cursos.becompliance.com/badges/badge.php?hash=479b123a59a4fd1eba2b383c8966b0b6e6b864d9" target="_blank" class="text-decoration-none text-white">
-            <img src="assets/img/badge_Categorização.png" class="card-img-top p-4" alt="Categorização de Dados Badge">
-            <div class="card-body">
-              <h5 class="card-title">Data Categorization Certificate (LGPD)</h5>
-              <p class="card-text small">Issued by Be Compliance</p>
-              <span class="btn btn-outline-light btn-sm mt-2">View Credential</span>
-            </div>
-          </a>
+        <div class="col-12 col-lg-4">
+          <div class="card  h-100 text-center shadow-lg ">
+            <a href="https://cursos.becompliance.com/badges/badge.php?hash=479b123a59a4fd1eba2b383c8966b0b6e6b864d9"
+              target="_blank" class="text-decoration-none text-white">
+              <img src="assets/img/badge_Categorização.png" class="card-img-top p-4" alt="Categorização de Dados Badge">
+              <div class="card-body">
+                <h5 class="card-title">Data Categorization Certificate (LGPD)</h5>
+                <p class="card-text small">Issued by Be Compliance</p>
+                <button class="btn btn-outline-light btn-sm mt-2">View Credential</button>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-  
+
       </div>
     </div>
   </section>
@@ -285,17 +462,17 @@
           <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control bg-secondary text-white border-0" id="name" required>
         </div>
-  
+
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control bg-secondary text-white border-0" id="email" required>
         </div>
-  
+
         <div class="mb-4">
           <label for="message" class="form-label">Message</label>
           <textarea class="form-control bg-secondary text-white border-0" id="message" rows="5" required></textarea>
         </div>
-  
+
         <div class="text-center">
           <button type="submit" class="btn btn-outline-light px-4 py-2">Send Message</button>
         </div>
@@ -345,7 +522,7 @@
 
       <!-- Copyright -->
       <div class="text-center mt-4 small text-white-50">
-        &copy; 2025 Marlon Tibola. All rights reserved.
+        &copy; <span id="current-year">2025</span> Marlon Cesar Tibola. All rights reserved.
       </div>
     </div>
   </footer>
