@@ -3,7 +3,6 @@ window.addEventListener('DOMContentLoaded', event => {
     setAge();
     setExperience();
 
-    animatedNumberInterval('projects-count', 5);
     animatedNumberInterval('certification-count', 3, 200);
 
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -15,6 +14,8 @@ window.addEventListener('DOMContentLoaded', event => {
         duration: 1000,
         once: true
     });
+
+    initSidebarMenu();
 })
 
 
@@ -42,6 +43,27 @@ function setExperience() {
     animatedNumberInterval('years-of-experience', year);
 }
 
+function initSidebarMenu() {
+    const openBtn = document.getElementById('openMenu');
+    const closeBtn = document.getElementById('closeMenu');
+    const sidebar = document.getElementById('sidebarMenu');
+    const overlay = document.getElementById('sidebarOverlay');
+
+    openBtn.addEventListener('click', () => {
+        sidebar.classList.add('show');
+        overlay.classList.add('show');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('show');
+        overlay.classList.remove('show');
+    });
+
+    overlay.addEventListener('click', () => {
+        sidebar.classList.remove('show');
+        overlay.classList.remove('show');
+    });
+}
 
 
 function animatedNumberInterval(elementId, target, time = 100) {
