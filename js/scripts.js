@@ -1,5 +1,8 @@
 window.addEventListener('DOMContentLoaded', event => {
 
+    
+    initSidebarMenu();
+    
     setAge();
     setExperience();
 
@@ -15,7 +18,6 @@ window.addEventListener('DOMContentLoaded', event => {
         once: true
     });
 
-    initSidebarMenu();
 })
 
 
