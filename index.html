@@ -121,15 +121,17 @@
           <h1 class="fw-bold text-white mb-0" id="years-of-experience">0</h1>
           <p class="text-white mb-0">Years of experience</p>
         </div>
-        <div class="col-md-4 d-flex justify-content-sm-center justify-content-start align-items-center gap-2">
-          <h1 class="fw-bold text-white mb-0" id="certification-count">0</h1>
-          <p class="text-white mb-0">Certifications</p>
+        <div class="col-md-4 d-flex justify-content-sm-center justify-content-start align-items-center">
+          <a href="#section-certifications"
+            class="text-white text-decoration-none mx-3 d-flex align-items-center gap-2">
+            <h1 class="fw-bold text-white mb-0" id="certification-count">0</h1>
+            <p class="text-white mb-0">Certifications</p>
+          </a>
         </div>
       </div>
     </div>
 
   </section>
-
 
   <section class="section-skills mt-md-5 mt-0" id="section-skills">
     <div class="container py-5">
@@ -258,7 +260,7 @@
 
 
       <!-- Meal Management -->
-      <div class="row align-items-center my-5 project-card">
+      <div class="row align-items-center my-5 project-card" data-aos="zoom-in">
         <div class="col-md-6">
           <img src="assets/projects/meal-management-ici/meal-management-menu.png" class="img-fluid rounded shadow"
             alt="Meal Management System">
@@ -271,6 +273,7 @@
             <span>.NET</span>
             <span>Angular</span>
             <span>PostgreSQL</span>
+            <span>Entity Framework</span>
             <span>DDD</span>
             <span>RabbitMQ</span>
             <span>Hangfire</span>
@@ -282,12 +285,98 @@
         </div>
       </div>
 
+      <!-- Meal Management Modal -->
+      <div class="modal fade" id="modalMealManagement" tabindex="-1" aria-labelledby="modalMealManagementLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalMealManagementLabel">Meal Management System</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="p-3 pb-0">
+              <p class="mb-0" style="font-family: 'Courier New', monospace; color: #ccc;">
+                <strong>Developed at:</strong>
+                <a href="https://ici.tec.br" class="btn btn-outline-light btn-sm" target="_blank"> Instituto das Cidades
+                  Inteligentes (ICI)</a>
+              </p>
+            </div>
+
+            <div class="modal-body">
+
+              <!-- Carousel -->
+              <div id="carouselMealManagement" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/projects/meal-management-ici/meal-management-login.png"
+                      class="d-block w-100 rounded" alt="Meal Management System Login Page">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/meal-management-ici/meal-management-home.png"
+                      class="d-block w-100 rounded" alt="Meal Management System Home Page">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/meal-management-ici/meal-management-crud.png"
+                      class="d-block w-100 rounded" alt="Meal Management System Crud Example">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/meal-management-ici/meal-management-menu.png"
+                      class="d-block w-100 rounded" alt="Meal Management System Menu">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMealManagement"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMealManagement"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+
+              <!-- Description -->
+              <p>The Meal Management System provides the management functionalities required by the Department of
+                Education of Curitiba to control food distribution across hundreds of public schools in the city.</p>
+
+              <p>The project aims to support the Municipal Department of Education of Curitiba in managing and
+                overseeing school meals for more than 450 educational units. The system provides features for educators,
+                nutritionists, and other school staff to request and manage meals, including special diets for students
+                with specific needs, such as food intolerances or allergies. It also enables the creation of monthly
+                menus for each school, offering nutritional information and intelligent mechanisms that automatically
+                substitute meals for students with dietary restrictions. Additionally, the Meal Management System
+                supports the evaluation of meal quality, service performance, and includes financial tools to calculate
+                payments to suppliers and generate detailed reports.</p>
+
+              <p>The application is built on distributed architecture principles.
+                <span class="tech-skill-span">ASP.NET Core</span> and
+                <span class="tech-skill-span">Angular</span> are the core technologies for the back-end and
+                front-end, respectively.
+                A background service, powered by <span class="tech-skill-span">Hangfire</span>, is responsible for
+                handling calculations and executing heavy processing tasks.
+                The system uses <span class="tech-skill-span">PostgreSQL</span> as its main relational database.
+                This service communicates with the APIs and front-end applications through a
+                <span class="tech-skill-span">RabbitMQ</span> event bus and
+                <span class="tech-skill-span">SignalR</span>.
+              </p>
+
+              <p>Throughout the development of this system, I worked on both the back-end and front-end. I contributed
+                to building APIs, background processing, and database integration with PostgreSQL, as well as
+                implementing the user interface and core features using Angular and Tailwind.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 
       <!-- SITES -->
-      <div class="row align-items-center my-5 flex-md-row-reverse project-card">
+      <div class="row align-items-center my-5 flex-md-row-reverse project-card" data-aos="zoom-in">
         <div class="col-md-6">
-          <img src="assets/projects/sites/sites-home.png" class="img-fluid rounded shadow" alt="SITES">
+          <img src="assets/projects/sites-ici/sites-home.png" class="img-fluid rounded shadow" alt="SITES">
         </div>
         <div class="col-md-6 text-white">
           <h3 class="fw-bold text-success mt-3 mt-md-0">SITES - Transportation for Special Education</h3>
@@ -297,6 +386,7 @@
             <span>.NET</span>
             <span>MVC</span>
             <span>PostgreSQL</span>
+            <span>Entity Framework</span>
             <span>DDD</span>
             <span>Hangfire</span>
             <span>Webpack</span>
@@ -307,168 +397,91 @@
             data-bs-target="#modalSites">More Details</button>
         </div>
       </div>
-    </div>
 
-    <!-- Meal Management Modal -->
-    <div class="modal fade" id="modalMealManagement" tabindex="-1" aria-labelledby="modalMealManagementLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content text-white">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalMealManagementLabel">Meal Management System</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="p-3 pb-0">
-            <p class="mb-0" style="font-family: 'Courier New', monospace; color: #ccc;">
-              <strong>Developed at:</strong>
-              <a href="https://ici.tec.br" class="btn btn-outline-light btn-sm" target="_blank"> Instituto das Cidades
-                Inteligentes (ICI)</a>
-            </p>
-          </div>
-
-          <div class="modal-body">
-
-            <!-- Carousel -->
-            <div id="carouselMealManagement" class="carousel slide mb-4" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/projects/meal-management-ici/meal-management-login.png" class="d-block w-100 rounded"
-                    alt="Meal Management System Login Page">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/projects/meal-management-ici/meal-management-home.png" class="d-block w-100 rounded"
-                    alt="Meal Management System Home Page">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/projects/meal-management-ici/meal-management-crud.png" class="d-block w-100 rounded"
-                    alt="Meal Management System Crud Example">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/projects/meal-management-ici/meal-management-menu.png" class="d-block w-100 rounded"
-                    alt="Meal Management System Menu">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMealManagement"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselMealManagement"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </button>
+      <!-- SITES Modal -->
+      <div class="modal fade" id="modalSites" tabindex="-1" aria-labelledby="modalSitesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalSitesLabel">SITES - Transportation for Special Education</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="p-3 pb-0">
+              <p class="mb-0" style="font-family: 'Courier New', monospace; color: #ccc;">
+                <strong>Developed at:</strong>
+                <a href="https://ici.tec.br" class="btn btn-outline-light btn-sm" target="_blank"> Instituto das Cidades
+                  Inteligentes (ICI)</a>
+              </p>
             </div>
 
-            <!-- Description -->
-            <p>The Meal Management System provides the management functionalities required by the Department of
-              Education of Curitiba to control food distribution across hundreds of public schools in the city.</p>
+            <div class="modal-body">
 
-            <p>The project aims to support the Municipal Department of Education of Curitiba in managing and
-              overseeing school meals for more than 450 educational units. The system provides features for educators,
-              nutritionists, and other school staff to request and manage meals, including special diets for students
-              with specific needs, such as food intolerances or allergies. It also enables the creation of monthly
-              menus for each school, offering nutritional information and intelligent mechanisms that automatically
-              substitute meals for students with dietary restrictions. Additionally, the Meal Management System
-              supports the evaluation of meal quality, service performance, and includes financial tools to calculate
-              payments to suppliers and generate detailed reports.</p>
+              <!-- Carousel -->
+              <div id="carouselSites" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/projects/sites-ici/sites-login.png" class="d-block w-100 rounded"
+                      alt="SITES Login Page">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/sites-ici/sites-home.png" class="d-block w-100 rounded"
+                      alt="SITES Home Page">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/projects/sites-ici/sites-form.png" class="d-block w-100 rounded"
+                      alt="SITES Crud Example">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSites"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselSites"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
 
-            <p>The application is built on distributed architecture principles.
-              <span class="tech-skill-span">ASP.NET Core</span> and
-              <span class="tech-skill-span">Angular</span> are the core technologies for the back-end and
-              front-end, respectively.
-              A background service, powered by <span class="tech-skill-span">Hangfire</span>, is responsible for
-              handling calculations and executing heavy processing tasks.
-              The system uses <span class="tech-skill-span">PostgreSQL</span> as its main relational database.
-              This service communicates with the APIs and front-end applications through a
-              <span class="tech-skill-span">RabbitMQ</span> event bus and
-              <span class="tech-skill-span">SignalR</span>.
-            </p>
+              <!-- Description -->
+              <p>A portal that allows citizens of Curitiba to request transportation for students with special needs.
+              </p>
 
-            <p>Throughout the development of this system, I worked on both the back-end and front-end. I contributed
-              to building APIs, background processing, and database integration with PostgreSQL, as well as
-              implementing the user interface and core features using Angular and Tailwind.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+              <p>The solution includes features that provide education professionals with an overview of transportation
+                requests through dashboards, ID card issuance, reporting tools, route visualization, and real-time
+                vehicle tracking. Citizens can access the public portal to submit and monitor requests, while service
+                providers can generate attendance lists, register attendance via QR Code, and manage staff and bus
+                routes directly through the Company Portal.</p>
+
+              <p>The system was developed using <span class="tech-skill-span">.NET</span> following the <span
+                  class="tech-skill-span">MVC</span> pattern. It includes two portals: an administrative portal for
+                managing transportation requests and generating reports, and a public-facing portal where citizens can
+                request a vehicle.</p>
+
+              <p>The application uses <span class="tech-skill-span">PostgreSQL</span> as its main database engine, and
+                background services are handled through <span class="tech-skill-span">Hangfire</span> for scheduled and
+                asynchronous processing. The user interface is styled with <span
+                  class="tech-skill-span">Bootstrap</span>
+                and the front-end assets are bundled using <span class="tech-skill-span">Webpack</span>.</p>
+
+              <p>To ensure quality and reliability, the system is covered with unit tests implemented using <span
+                  class="tech-skill-span">xUnit</span> and <span class="tech-skill-span">NSubstitute</span>.</p>
+
+              <p>Although my involvement in the project was brief, I was responsible for developing a significant
+                portion of the portal, contributing directly to the implementation of its main features and overall
+                structure.</p>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- SITES Modal -->
-    <div class="modal fade" id="modalSites" tabindex="-1" aria-labelledby="modalSitesLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content text-white">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalSitesLabel">SITES - Transportation for Special Education</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="p-3 pb-0">
-            <p class="mb-0" style="font-family: 'Courier New', monospace; color: #ccc;">
-              <strong>Developed at:</strong>
-              <a href="https://ici.tec.br" class="btn btn-outline-light btn-sm" target="_blank"> Instituto das Cidades
-                Inteligentes (ICI)</a>
-            </p>
-          </div>
 
-          <div class="modal-body">
-
-            <!-- Carousel -->
-            <div id="carouselSites" class="carousel slide mb-4" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/projects/sites/sites-login.png" class="d-block w-100 rounded" alt="SITES Login Page">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/projects/sites/sites-home.png" class="d-block w-100 rounded" alt="SITES Home Page">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/projects/sites/sites-form.png" class="d-block w-100 rounded"
-                    alt="SITES Crud Example">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSites" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselSites" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </button>
-            </div>
-
-            <!-- Description -->
-            <p>A portal that allows citizens of Curitiba to request transportation for students with special needs.
-            </p>
-
-            <p>The solution includes features that provide education professionals with an overview of transportation
-              requests through dashboards, ID card issuance, reporting tools, route visualization, and real-time
-              vehicle tracking. Citizens can access the public portal to submit and monitor requests, while service
-              providers can generate attendance lists, register attendance via QR Code, and manage staff and bus
-              routes directly through the Company Portal.</p>
-
-            <p>The system was developed using <span class="tech-skill-span">.NET</span> following the <span
-                class="tech-skill-span">MVC</span> pattern. It includes two portals: an administrative portal for
-              managing transportation requests and generating reports, and a public-facing portal where citizens can
-              request a vehicle.</p>
-
-            <p>The application uses <span class="tech-skill-span">PostgreSQL</span> as its main database engine, and
-              background services are handled through <span class="tech-skill-span">Hangfire</span> for scheduled and
-              asynchronous processing. The user interface is styled with <span class="tech-skill-span">Bootstrap</span>
-              and the front-end assets are bundled using <span class="tech-skill-span">Webpack</span>.</p>
-
-            <p>To ensure quality and reliability, the system is covered with unit tests implemented using <span
-                class="tech-skill-span">xUnit</span> and <span class="tech-skill-span">NSubstitute</span>.</p>
-
-            <p>Although my involvement in the project was brief, I was responsible for developing a significant
-              portion of the portal, contributing directly to the implementation of its main features and overall
-              structure.</p>
-
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
   </section>
 
@@ -524,12 +537,11 @@
     </div>
   </section>
 
-
   <section class="section-contact" id="section-contact">
     <div class="container py-5">
       <h1 class="section-title text-center text-white">Get in Touch</h1>
       <form class="mx-auto" style="max-width: 600px;" id="contact-form">
-         <div class="mb-3">
+        <div class="mb-3">
           <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control bg-secondary text-white border-0" id="name" required>
         </div>
@@ -544,9 +556,9 @@
           <textarea class="form-control bg-secondary text-white border-0" id="message" rows="5" required></textarea>
         </div>
 
-        <div class="text-center" >
-          <button type="submit" class="btn btn-outline-light px-4 py-2">Send Message</button>
-        </div> 
+        <div class="text-center" data-aos="zoom-out">
+          <button type="submit" class="btn btn-outline-light px-4 py-2" >Send Message</button>
+        </div>
       </form>
     </div>
   </section>
