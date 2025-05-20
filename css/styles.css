@@ -106,6 +106,10 @@ i:hover {
   background-color: #042d57;
 }
 
+.section-skills .bg-soft-skills {
+  background-color: #60a5fa;
+}
+
 .tech-icons {
   display: flex;
   flex-wrap: wrap;
