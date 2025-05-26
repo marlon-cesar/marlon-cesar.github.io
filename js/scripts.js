@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', event => {
 
-    
+
     initSidebarMenu();
-    
+
     setAge();
     setExperience();
 
@@ -17,6 +17,8 @@ window.addEventListener('DOMContentLoaded', event => {
         duration: 1000,
         once: true
     });
+
+    showBackToTopButton();
 
 })
 
@@ -75,4 +77,25 @@ function animatedNumberInterval(elementId, target, time = 100) {
         if (number >= target) clearInterval(interval);
         number++;
     }, time);
+}
+
+
+function showBackToTopButton() {
+    const backToTopBtn = document.getElementById("backToTop");
+
+    window.onscroll = function () {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+
+        if (scrollTop + windowHeight >= documentHeight - 2500) {
+            backToTopBtn.style.opacity  = "1";
+        } else {
+            backToTopBtn.style.opacity  = "0";
+        }
+    };
+
+    backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 }
