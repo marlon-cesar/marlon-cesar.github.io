@@ -253,3 +253,20 @@ i:hover {
   transform: scale(1.1);
   box-shadow: 0 0 15px rgba(0, 255, 136, 0.7);
 }
+
+#section-personal-projects .card {
+  background-color: #1f1f1f;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#section-personal-projects .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 255, 255, 0.15);
+}
+
+.card-title{
+  font-weight: bold;
+}
