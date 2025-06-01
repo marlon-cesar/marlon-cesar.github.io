@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', event => {
     setAge();
     setExperience();
 
-    animatedNumberInterval('certification-count', 3, 200);
+    animatedNumberInterval('certification-count', 3, 500);
 
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -44,7 +44,7 @@ function setExperience() {
 
     const year = yearDate.getFullYear() - 1970;
 
-    animatedNumberInterval('years-of-experience', year);
+    animatedNumberInterval('years-of-experience', year, 200);
 }
 
 function initSidebarMenu() {
