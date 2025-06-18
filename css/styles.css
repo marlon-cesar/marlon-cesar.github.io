@@ -39,7 +39,7 @@ i:hover {
 }
 
 .custom-tooltip {
-  --bs-tooltip-bg:  #5896c7;
+  --bs-tooltip-bg: #5896c7;
   --bs-tooltip-color: white;
 }
 
@@ -236,7 +236,8 @@ i:hover {
   right: 30px;
   z-index: 99;
   font-size: 24px;
-  background-color: #00ff88; /* ajuste para combinar com o verde do seu projeto */
+  background-color: #00ff88;
+  /* ajuste para combinar com o verde do seu projeto */
   color: white;
   border: none;
   outline: none;
@@ -267,6 +268,35 @@ i:hover {
   box-shadow: 0 8px 15px rgba(0, 255, 255, 0.15);
 }
 
-.card-title{
+.card-title {
   font-weight: bold;
+}
+
+
+.section-contact h2 {
+  font-family: monospace;
+  font-size: 2.5rem;
+}
+
+.section-contact .highlighted-button {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00ffae;
+  background-color: transparent;
+  border: 2px solid #00ffae;
+  border-radius: 30px;
+  padding: 12px 28px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 12px rgba(0, 255, 174, 0.2);
+  margin-bottom: 3em;
+}
+
+.section-contact .highlighted-button:hover {
+  background-color: #00ffae;
+  color: #0f1115;
+  box-shadow: 0 0 18px rgba(0, 255, 174, 0.5);
+  transform: scale(1.05);
 }
