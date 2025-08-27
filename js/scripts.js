@@ -5,8 +5,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
     setAge();
     setExperience();
+    setProjects();
 
-    animatedNumberInterval('certification-count', 3, 500);
 
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -44,8 +44,15 @@ function setExperience() {
 
     const year = yearDate.getFullYear() - 1970;
 
-    animatedNumberInterval('years-of-experience', year, 200);
+    animatedNumberInterval('years-of-experience', year, 200, true);
 }
+
+
+function setProjects() {
+
+    animatedNumberInterval('projects-count', 20, 100, true);
+}
+
 
 function initSidebarMenu() {
     const openBtn = document.getElementById('openMenu');
@@ -70,11 +77,15 @@ function initSidebarMenu() {
 }
 
 
-function animatedNumberInterval(elementId, target, time = 100) {
+function animatedNumberInterval(elementId, target, time, showPlus = false) {
     let number = 0
     var interval = setInterval(function () {
         document.getElementById(elementId).innerHTML = number;
-        if (number >= target) clearInterval(interval);
+        if (number >= target){ 
+            clearInterval(interval);
+            if(showPlus)                
+                document.getElementById(elementId).innerHTML = number + "+";
+        }
         number++;
     }, time);
 }
